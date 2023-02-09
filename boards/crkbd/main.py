@@ -1,4 +1,5 @@
 from kb import KMKKeyboard
+from kb import data_pin
 
 from kmk.keys import KC
 
@@ -44,11 +45,11 @@ keyboard.modules.append(combos)
 combos.combos = [
     # match matrix so it doesn't matter layer
     # [] keys
-    Chord((3, 4), KC.LBRACKET, match_coord=True)
-    Chord((28, 27), KC.RBRACKET, match_coord=True)
+    Chord((3, 4), KC.LBRACKET, match_coord=True),
+    Chord((28, 27), KC.RBRACKET, match_coord=True),
 
     # Toggle Colemak
-    Chord((12, 13, 14, 15, 23), KC.RBRACKET, match_coord=True)
+    Chord((12, 13, 14, 15, 23), KC.RBRACKET, match_coord=True),
     # Toggle Numpad
     Chord((12, 13, 14, 23), KC.RBRACKET, match_coord=True)
 ]
